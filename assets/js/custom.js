@@ -361,24 +361,24 @@ function doneResizing(){
     $(".owl-carousel").trigger('next.owl.carousel');
 }
 
-function simpleMap(latitude, longitude, markerImage, mapStyle, mapElement, markerDrag){
-    if (!markerDrag){
-        markerDrag = false;
-    }
-    var mapCenter = new google.maps.LatLng(latitude,longitude);
-    var mapOptions = {
-        zoom: 13,
-        center: mapCenter,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        styles: mapStyle
-    };
-    var element = document.getElementById(mapElement);
-    var map = new google.maps.Map(element, mapOptions);
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(latitude,longitude),
-        map: map,
-        icon: markerImage,
-        draggable: markerDrag
-    });
-}
+// function simpleMap(latitude, longitude, markerImage, mapStyle, mapElement, markerDrag){
+//     if (!markerDrag){
+//         markerDrag = false;
+//     }
+//     var mapCenter = new google.maps.LatLng(latitude,longitude);
+//     var mapOptions = {
+//         zoom: 13,
+//         center: mapCenter,
+//         disableDefaultUI: true,
+//         scrollwheel: false,
+//         styles: mapStyle
+//     };
+//     var element = document.getElementById(mapElement);
+//     var map = new google.maps.Map(element, mapOptions);
+//     var marker = new google.maps.Marker({
+//         position: new google.maps.LatLng(latitude,longitude),
+//         map: map,
+//         icon: markerImage,
+//         draggable: markerDrag
+//     });
+// }
